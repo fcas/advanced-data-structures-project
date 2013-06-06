@@ -81,7 +81,7 @@ public class GrafoAbstratoTest {
                 IAresta aresta8 = new Aresta(vertice6, vertice7);
                 IAresta aresta9 = new Aresta(vertice7, vertice11);
                 IAresta aresta10 = new Aresta(vertice11, vertice10);
-                IAresta edge10 = new Aresta(vertice3, vertice5);
+                IAresta aresta11 = new Aresta(vertice3, vertice5);
                 
                 grafo.adicionarAresta(aresta1);
                 grafo.adicionarAresta(aresta2);
@@ -93,7 +93,7 @@ public class GrafoAbstratoTest {
                 grafo.adicionarAresta(aresta8);
                 grafo.adicionarAresta(aresta9);
                 grafo.adicionarAresta(aresta10);
-                grafo.adicionarAresta(edge10);
+                grafo.adicionarAresta(aresta11);
         }
 
         @Test
