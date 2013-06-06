@@ -11,8 +11,17 @@ public class Vertice implements IVertice, Visitable {
     private String name;
     private String id;
     private int relevancia;
+    private boolean visitado;
 
-    @Override
+    public boolean isVisitado() {
+		return visitado;
+	}
+
+	public void setVisitado(boolean visitado) {
+		this.visitado = visitado;
+	}
+
+	@Override
     public String getId() {
         return id;
     }
@@ -25,6 +34,7 @@ public class Vertice implements IVertice, Visitable {
         this.name = name;
         this.id = id;
         this.relevancia = 0;
+        this.visitado = false; 
     }
 
     @Override
