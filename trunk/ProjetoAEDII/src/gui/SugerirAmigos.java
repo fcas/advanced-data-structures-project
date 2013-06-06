@@ -361,7 +361,7 @@ public class SugerirAmigos extends javax.swing.JPanel {
     private void preencherTabela(List<IVertice> listaAmigos) {
 
         limparTabela();
-        if (listaAmigos.isEmpty()) {
+        if (listaAmigos.isEmpty() || listaAmigos == null) {
            JOptionPane.showMessageDialog(this, "Nenhum nome encontrado!");
         } else {
             for (int i=0; i< listaAmigos.size(); i++) {
